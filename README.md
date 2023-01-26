@@ -57,3 +57,19 @@ Based on: Negation and PII Filtered By-Year (1997 only)
 Additional processing steps:
 
 - `poetry run python generate_cooccurrence_network.py data/filtered_pii_extracted/1997_pii_extracted.csv`
+
+#### SBM Topic Model Topics 
+
+Based on: Negation and PII Filtered By-Year
+
+Additional processing steps:
+
+- `SBM_topic-Model_Privacy_Policy_Paper_2023.ipynb`
+
+#### SBM Topic Model Minimum Description Length 
+
+Based on: By-Year Data
+
+Additional processing steps:
+
+- `SBM_topic-Model_Privacy_Policy_Paper_2023.ipynb`
