@@ -30,4 +30,4 @@ Additional processing steps:
 
 Based on: Negation Filtered By-Year
 Additional processing steps: 
--`negation_filtered_policytext_PII.ipynb`
+- `negation_filtered_policytext_PII.ipynb`
