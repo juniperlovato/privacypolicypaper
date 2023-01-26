@@ -7,7 +7,7 @@
 
 Things we need to rerun:
 
-- [ ] network backbone threshold full version and 0.01 (Phil)
+- [ ] network backbone threshold full version and 0.01 for all years (Phil)
 - [ ] Remake visualizations and get network metrics in Gephi (Juniper once I get #1)
 - [X] Rerun word frequency distributions  with PII terms (Juniper)
 - [ ] PII only SBM topic models with PII terms(juniper)
