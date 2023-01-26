@@ -74,3 +74,12 @@ Additional processing steps:
 
 - `SBM_topic-Model_Privacy_Policy_Paper_2023.ipynb`
 - `countwords_uniquewords_Privacy_Policy_Paper_2023.ipynb`
+
+#### Frequency Distribution of PII Data Types 
+
+Based on: Negation and PII Filtered By-Year 
+
+Additional processing steps:
+
+- `Viz_PII_Frequency_Privacy_Policy_Paper_2023.ipynb`
+
