@@ -13,8 +13,8 @@ Based on: Original SQLite database
 
 Additional processing steps:
 
-- `poetry run python extract/extract_from_sqlite.py`
-- `poetry run python extract/join.py`
+- `extract/extract_from_sqlite.py`
+- `extract/join.py`
 
 #### By-Year Data
 
@@ -22,17 +22,9 @@ Based on: Full Corpus CSV Data
 
 Additional processing steps:
 
-- `python split_by_year.py data/PrivacyPolicies_df_cleaned.csv --out-prefix=data/by-year/PrivacyPolicies`
+- `split_by_year.py`
 
-#### Negation Filtered By-Year
-
-Based on: By-Year Data
-
-Additional processing steps:
-
-- `negation_filtered_policytext_PII.ipynb`
-
-#### Negation and PII Filtered By-Year
+#### Negation Filtered By-Year Data
 
 Based on: By-Year Data
 
@@ -40,7 +32,13 @@ Additional processing steps:
 
 - `negation_filtered_policytext_PII.ipynb`
 
-### Visualizations
+#### Negation and PII Filtered By-Year Data
+
+Based on: By-Year Data
+
+Additional processing steps:
+
+- `negation_filtered_policytext_PII.ipynb`
 
 #### Co-Occurrence Networks
 
@@ -48,7 +46,7 @@ Based on: Negation and PII Filtered By-Year
 
 Additional processing steps:
 
-- `poetry run python generate_cooccurrence_network.py`
+- `generate_cooccurrence_network.py`
 
 #### Co-Occurrence Network Backbone
 
@@ -56,11 +54,11 @@ Based on: Negation and PII Filtered By-Year (1997 only)
 
 Additional processing steps:
 
-- `poetry run python generate_cooccurrence_network.py data/filtered_pii_extracted/1997_pii_extracted.csv`
+- `generate_cooccurrence_network.py`
 
 #### SBM Topic Model Topics 
 
-Based on: Negation and PII Filtered By-Year
+Based on: Negation and PII Filtered By-Year Data
 
 Additional processing steps:
 
@@ -75,11 +73,12 @@ Additional processing steps:
 - `SBM_topic-Model_Privacy_Policy_Paper_2023.ipynb`
 - `countwords_uniquewords_Privacy_Policy_Paper_2023.ipynb`
 
-#### Frequency Distribution of PII Data Types 
+### Visualizations
+
+#### Frequency Distribution of PII Data Types
 
 Based on: Negation and PII Filtered By-Year 
 
 Additional processing steps:
 
 - `Viz_PII_Frequency_Privacy_Policy_Paper_2023.ipynb`
-
