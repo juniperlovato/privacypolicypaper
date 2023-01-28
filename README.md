@@ -1,5 +1,5 @@
 # Privacy Policies over Time
-Juniper Lovato, Philip Mueller, Parisa Suchdev
+Juniper Lovato, Philip Mueller, Parisa Suchdev, Peter Dodds
 
 ## Data Processing
 
