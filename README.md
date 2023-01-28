@@ -73,6 +73,16 @@ Additional processing steps:
 - `SBM_topic-Model_Privacy_Policy_Paper_2023.ipynb`
 - `countwords_uniquewords_Privacy_Policy_Paper_2023.ipynb`
 
+#### Topic Prevalence Over Time
+
+For topics extracted from the whole corpus, prevalence in each year.
+
+Based on: Negation and PII Filtered By-Year Data, ABM Topic Model Topics (whole corpus)
+
+Additional processing steps:
+
+- `calculate_topic_timeseries.py -s`
+
 ### Visualizations
 
 #### Frequency Distribution of PII Data Types
@@ -82,3 +92,11 @@ Based on: Negation and PII Filtered By-Year
 Additional processing steps:
 
 - `Viz_PII_Frequency_Privacy_Policy_Paper_2023.ipynb`
+
+#### Topic Prevalence Over Time
+
+Based on: Topic Prevalence Over Time
+
+Additional processing steps:
+
+- `plot_topic_timeseries.py`
