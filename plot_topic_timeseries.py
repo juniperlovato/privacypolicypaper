@@ -42,9 +42,9 @@ for topic in topic_names:
     elif topic in bottom_topics:
         line_styles.append('dot')
 
-# list of 15 easily distinguished colors
-color_map = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22',
-    '#17becf', '#aec7e8', '#ffbb78', '#98df8a', '#ff9896', '#c5b0d5']
+# list of 6 easily distinguished colors
+color_map = ['#FFB14E', '#EA5F94', '#2D9BF0', '#6FEA5F', '#B14EFF', '#5FF0EA']
+
 
 # shorten color map to group size and repeat for each group
 color_map = [color_map[:len(group)] for group in [top_topics, middle_topics, bottom_topics]]
@@ -55,10 +55,13 @@ fig = px.line(topic_metrics, title='Topic prevalence over time',
     labels={'index': 'Year', 'value': 'Prevalence', 'variable': 'Topic'},
     color_discrete_map={topic: color_map[i] for i, topic in enumerate(topic_names)})
 
+# use Arial font, black, 14pt
+fig.update_layout(font=dict(family='Arial', color='#000000', size=14))
+
 # set line styles
 for i, trace in enumerate(fig.data):
     trace.line.dash = line_styles[i]
 
-fig.write_image("topics_over_time.pdf", width=1200, height=800)
+fig.write_image("topics_over_time.pdf", width=900, height=600)
 
 # fig.show()
