@@ -2,6 +2,8 @@ import argparse
 
 import pandas as pd
 import plotly.express as px
+import plotly.io as pio
+pio.kaleido.scope.mathjax = None
 
 parser = argparse.ArgumentParser()
 parser.add_argument('topic_prevalence_file', help='Input CSV file with topic prevalence over time')
@@ -57,4 +59,6 @@ fig = px.line(topic_metrics, title='Topic prevalence over time',
 for i, trace in enumerate(fig.data):
     trace.line.dash = line_styles[i]
 
-fig.show()
+fig.write_image("topics_over_time.pdf", width=1200, height=800)
+
+# fig.show()
